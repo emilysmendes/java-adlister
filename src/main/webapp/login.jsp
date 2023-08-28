@@ -6,15 +6,28 @@
 
 <%--TODO: Inside of login.jsp write some code to check the submitted values. If the username submitted is "admin", and the password is "password", redirect the user t o the profile page; otherwise, redirect back to the login form.--%>
 
-<%!
-    String email = request.getParameter("username");
-    String password = request.getParameter("password");
-%>
-
-<form method="POST" action="/register">
-    <label for="loginUser">Username</label>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%
+    if(request.getMethod().equalsIgnoreCase("POST")) {
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        if(username.equals("admin") && password.equals("password"))
+            response.sendRedirect("/profile.jsp");
+    }
+    %>
+<!doctype html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+<form >
     <input id="loginUser" name="username" placeholder="Enter your username"/>
-    <label for="loginPassword">Password</label>
     <input id="loginPassword" name="password" placeholder="Enter your password"/>
+    <button type="submit">Submit</button>
 </form>
+
+</html>
+
 
