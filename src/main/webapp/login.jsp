@@ -12,7 +12,7 @@
     if(request.getMethod().equalsIgnoreCase("POST")) {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        if(username.equals("admin") && password.equals("password"))
+        if(username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("password"))
             response.sendRedirect("/profile.jsp");
     }
     %>
