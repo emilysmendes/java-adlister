@@ -11,6 +11,7 @@ public class CorrectServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("message", "You Win!");
         req.getRequestDispatcher("/viewGuess.jsp").forward(req, resp);
+
     }
 
     @Override
