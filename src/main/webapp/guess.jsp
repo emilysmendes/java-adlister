@@ -11,13 +11,13 @@
     <title>Guess</title>
 </head>
 <body>
-<form method="POST">
-   <div><h2>Enter a number between 1-3</h2>
-    <input type="number" name="userGuessNumber">
-   </div>
+<form method="POST" action="guess">
+   <label><h2>Enter a number between 1-3</h2>
+    <input type="text" name="userGuessNumber">
+   </label>
     <br>
     <div>
-        <input type="submit" value="Submit">
+        <button type="submit">Submit</button>
     </div>
 </form>
 

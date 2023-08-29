@@ -5,11 +5,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet ("/viewGuess")
+@WebServlet("/correct")
 public class CorrectServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        req.setAttribute("message", "You Win!");
+        req.getRequestDispatcher("/viewGuess.jsp").forward(req, resp);
     }
 
     @Override
