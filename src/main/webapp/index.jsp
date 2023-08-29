@@ -10,7 +10,7 @@
     <jsp:include page="partials/navbar.jsp" />
 
 <script>
-    location.href="/pickcolor"
+    location.href="/guess"
 </script>
 </body>
 </html>
