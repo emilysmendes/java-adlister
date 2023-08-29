@@ -15,15 +15,15 @@
 <h1>Build your pizza</h1>
 
 <form method="POST" action="/pizza-order">
-    <div class="crust-form">
-        <h3><label for="crust">Choose a crust:</label></h3>
-        <select name="crustOptions" id="crust">
-            <option value="Thin">Thin</option>
-            <option value="Thick">Thick</option>
-            <option value="Detroit">Detroit</option>
-            <option value="Chicago">Chicago</option>
-        </select>
-    </div>
+<%--    <div class="crust-form">--%>
+<%--        <h3><label for="crust">Choose a crust:</label></h3>--%>
+<%--        <select name="crustOptions" id="crust">--%>
+<%--            <option value="Thin">Thin</option>--%>
+<%--            <option value="Thick">Thick</option>--%>
+<%--            <option value="Detroit">Detroit</option>--%>
+<%--            <option value="Chicago">Chicago</option>--%>
+<%--        </select>--%>
+<%--    </div>--%>
     <div class="sauce-form">
         <h3><label for="sauce">Choose a sauce:</label></h3>
         <select name="sauceOptions" id="sauce">
