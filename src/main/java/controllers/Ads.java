@@ -1,3 +1,7 @@
+package controllers;
+
+import models.Ad;
+
 import java.sql.SQLException;
 import java.util.List;
 

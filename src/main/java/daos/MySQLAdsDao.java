@@ -1,3 +1,5 @@
+package daos;
+
 import com.mysql.cj.jdbc.ConnectionImpl;
 import com.mysql.cj.jdbc.Driver;
 
